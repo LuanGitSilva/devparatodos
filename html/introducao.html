@@ -437,6 +437,187 @@
                             <img src="./exemplo/explica02.png" alt="Imagem mostrando o resultado do código CSS na tela do navegador.">
                         </div>
                     </div>
+                    <h3>
+                        Explicando a utilização do "ID" e da "CLASS"
+                    </h3>
+                    <p>
+                        Primeiro vamos entender que estamos criando um arquivo ".css" e temos que vincular ele ao arquivo ".html", temos que conectar eles através de um link. Então vamos criar o arquivo "style.css" e criar o link rel="stylesheet" href="exemploCss.css" para conseguirmos realizar a estilização do documento.
+                    </p>
+                    <p>
+                        Agora com o arquivo ".css" criado vamos entender o conceito de "id" e "class", todos os dois são métodos que podemos utilizar para realizar a estilização. Vamos entender a diferença entre os dois.
+                    </p>
+                    <p>
+                        ID - inserindo um "id" na nossa tag "html" nós conseguimos chamar essa tag no documento ".css" através de um "#". Por exemplo, pegamos uma tag p e colocamos um id= texto, agora vamos no arquivo ".css" e chamamos essa tag como #texto{} veja que abrimos e fechamos o "{}", é dentro deles que iremos inserir as configurações css para estilização. Mas o "ID" só poderá ser utilizado em uma única tag HTML, então não conseguimos inserir o mesmo ID em 3 tags por exemplo.
+                    </p>
+                    <p>
+                        CLASS - já com o "class" nós identificamos a tag HTML assim class= textos e no documento ".css" chamamos ela como ".textos", veja que para a "class" utilizilamos o "." na parte CSS. E diferente do ID, com a CLASS você poderá utilizar essa class em quantas tags HTML quiser.
+                    </p>
+                    <h3>
+                        Agora vamos começar o nosso primeiro exemplo de código em CSS
+                    </h3>
+                    <p>
+                        Já com nosso arquivo ".css" criado e feito o link dele no arquivo ".html" vamo começar nossas configurações. A primeira será utilizando o " * " que aqui significa uma configuração global do arquivo, iremos inserir:
+                    </p>
+                    <ul>
+                        <li>
+                            padding: 0; para que inicialmente todo o padding (preenchimento) das tags fiquem zeradas.
+                        </li>
+                        <li>
+                            border: 0; para que as bordas fiquem zeradas.
+                        </li>
+                        <li>
+                            margin: 0; para que as margens fiquem zeradas.
+                        </li>
+                        <li>
+                            box-sizing: border-box; aqui estamos dizendo que independente do que tivez na tag, o tamanho dela será contado do final das bordas.
+                        </li>
+                    <ul>
+                    <p>
+                        Agora para nosso body vamos usar:
+                    </p>
+                    <ul>
+                        <li>
+                            width: 100vw; para que o body fique com toda a largura da nossa tela, esse "vw" significa viewport width = largura da tela em termos mais leigos.
+                        </li>
+                        <li>
+                            height: 100vh; aqui também temos uma configuração de viewport, mas essa é viewport height, ou seja, altura da tela.
+                        </li>
+                        <li>
+                            display: flex; o display flex nos permite manusear os itens dentro da nossa tag, por exemplo, se quisermos posicionar os itens desse body em colunas devemos inserir um display flex e um flex-direction collumn, mas como queremos que eles fiquem um abaixo do outros iremos não iremos dizer que quermos em linhas pois não precisa, mas para deixar em linhas utilizamos o flex-direction row. O display flex é bem mais complexo que isso, então recomendamos uma leitura mais aprofundada sobre ele.
+                        </li>
+                        <li>
+                            align-items: center; com esse é como se passassemos uma linha ao centro tag e dissessemos que tudo ficará alinhado de acordo com essa linha, nem irá exceder para baixo, nem para cima, isso porque estamos com nosso display em forma de linha, então essa linha imaginária será horizontal.
+                        </li>
+                        <li>
+                            justify-content: center; com esse deixaremos os itens dentro do body ao centro dele, e como estamos utilizando display em forma de linhas, o justify-content trata o conteúdo como coluna e irá igualar ao meio da tela o conteúdo.
+                        </li>
+                        <li>
+                            background-color: rgb(235, 232, 232); com essa configuração estamos inserindo uma cor de fundo, e nesse caso é uma cor quase branca, ela tem um leve escurecimento para ajudar na visualização do usuário, pois cores muito claras ou vívidas podem acabar nos ofuscando durante a vizualização e causando sensação de desconforto.
+                        </li>
+                    </ul>
+                    <p>
+                        Para o nosso main vamos iserir:
+                    </p>
+                    <ul>
+                        <li>
+                            width: 350px; aqui estamos inserindo uma largura, veja que ela está em píxels.
+                        </li>
+                        <li>
+                            padding: 20px; com esse preenchimento nós evitamos que o conteúdo dentro do main fique próximo demais das bordas ou até mesmo que encoste, assim com o padding teremos algo mais organizado.
+                        </li>
+                        <li>
+                            background-color: rgb(84, 187, 120); essa cor de fundo é uma cor esverdeada para destacar o main do body.
+                        </li>
+                        <li>
+                            display: flex; o display flex como explicado anteriormente nos ajuda a escolher o direcionamento do conteúdo, e aqui iremos usar o direcionamento de coluna como mostra a configuração a seguir.
+                        </li>
+                        <li>
+                            flex-direction: column;
+                        </li>
+                        <li>
+                            justify-content: center;
+                        </li>
+                        <li>
+                            gap: 20px; esse gap é praticamente um disanciamento entre os itens.
+                        </li>
+                        <li>
+                            box-shadow: 0px 0px 6px .5px; aqui estamos inserindo uma sombra ao redor para dar uma sensação de que o main está um pouco elevado do body e por isso fica o sombreamento ao redor, devido a elevação.
+                        </li>
+                    </ul>
+                    <p>
+                        Para o nosso título h1 e para nossas tags p:
+                    </p>
+                    <ul>
+                        <li>
+                            text-align: center; faz com que os textos fiquem centralizados.
+                        </li>
+                    </ul>
+                    <p>
+                        Agora vamos utilizar um id, e lembrando que no css referenciamos ele com uma #.
+                    </p>
+                    <ul>
+                        <li>#caixa {</li>
+                            <li>
+                                padding: 20px;
+                            </li> 
+                        <li>}</li>
+                    </ul>
+                    <p>
+                        Agora temos o uso de uma class, lembrando que referenciamos ela no css com um " . ".
+                    </p>
+                    <ul>
+                    <li>
+                        .function {
+                    </li>
+                        <li>
+                            display: block; com esse block, diferentemente do flex, ele deixará o conteúdo fixo onde quer que ele esteja.
+                        </li>
+                        <li>
+                            margin: auto; aqui estamos dizendo que queremos que seja inserida uma margem automáica para deixar nosso conteúdo centralizado, então o navegador irá deixar a margem maleável para ele conseguir centralizar.
+                        </li>
+                        <li>
+                            border: 1px solid; com essa configuração estamos inserindo uma borda ao redor do conteúdo, podemos escolher a largura, com esse sólido estamos dizendo que ela será contínua e sem detalhes, também poderíamos ter inserido uma cor, mas não foi necessário.
+                        </li>
+                        <li>
+                            width: 5px;
+                        </li>
+                        <li>
+                            height: 5px;
+                        </li>
+                        <li>
+                            background-color: black;
+                        </li>
+                        <li>
+                            cursor: pointer; aqui estamos dizendo o seguinte, quando o cursor estiver por cima do conteúdo é para aparecer a mãozinha como se indicasse alguma coisa diferente naquele local.
+                        </li>
+                    <li>}</li>
+                    </ul>
+                    <p>
+                        Essa próxima agora é uma configuração de algo que ficará escondido na tela e sóaparecerá quando o cursor estiver sobre o ponto preto na tela.
+                    </p>
+                    <ul>
+                        <li>
+                            .none {
+                        </li>
+                            <li>
+                                display: none;
+                            </li>
+                            <li>
+                                margin: auto;
+                            </li>
+                            <li>
+                                width: 110px;
+                            </li>
+                            <li>
+                                background-color: aliceblue;
+                            </li>
+                            <li>
+                                font-size: 20px;
+                            </li>
+                            <li>
+                                box-shadow: 0px 0px 3px 0.5px;
+                            </li>
+                            <li>
+                                border-radius: 20px; o border radius nos permite adicionar uma característica arredondada ao conteúdo.
+                            </li> 
+                            <li>
+                                cursor: pointer;
+                            </li>
+                        <li>
+                            }
+                        </li>
+                    </ul>
+                    <h3>
+                        Agora veja como fica no editor de código e o resultado no navegador
+                    </h3>
+                    <div class="resumoImagens">
+                        <div>
+                            <img src="exemplo/exemploCss.png">
+                        </div>
+                        <div>
+                            <img src="exemplo/navegadorCss.png">
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- -------------------------------------- -->
@@ -481,6 +662,40 @@
                 <p>
                     Por a SUN Microsystems já manter a linguagem Java, esse fato fez com que a LiveScript tivesse seu nome alterado para JavaScript. Mas temos que lembrar que Java e JavaScript são linguagens tanto diferentes em seus conceito quanto em seus usos.
                 </p>
+                <h3>
+                    Agora vamos começar o nosso primeiro exemplo de código em CSS
+                </h3>
+                <p>
+                    Com o JavaScript vamos ver primeiro as imagens e depois veremos as explicações de cada passo feito.
+                </p>
+
+                <div class="resumoImagens">
+                    <div>
+                        <img src="exemplo/exemploJs.png">
+                    </div>
+                </div>
+
+                <p>
+                    Primeiro vamos entender o que são esses "let", "const" e "var". O LET e o VAR são variáveis, conseguimos dar a ele valores de tags, por exemplo, para que não seja preciso estar digitando o processo pra acessar essa tag toda vez que for preciso. Com as variáveis podemos alterar seus valores, caso você dê um valor 'um' para uma variável e 10 linhas depois dê um valor 'dois' para a mesma let, era ficará com o valor 'dois' dentro dela. Com a CONST é diferente, o valor definido para uma constante não pode ser alterado após definido. Por as variáveis serem tão maleáveis, o seu uso deve ser muito restrito ou até mesmo evitado, pois além não ser considerada uma boa prática ela pode ter seu valor alterado de forma indevida e acabar estragando seu código.
+                </p>
+                <p>
+                    A forma mais aconselhável de utilizar a variável LET é para uma função específica, e ela podem ser criadas dentro da função e fora dela. Quando ela é criada fora da função ela pode ser chamada em mais de um local (escopo geral), mas se ela for criada dentro da função ela só terá valor dentro dessa referida função (escopo restrito).
+                </p>
+                <p>
+                    A CONST tem um uso parecido com a LET e a VAR, mas como explicado antes, ela não terá seu valor alterado depois que for definido, e a CONST é a mais aconselhável para uso em seu código, isso evitará que você acabe gerando bugs no seu código.
+                </p>
+                <p>
+                    Agora vamos aprender sobre nossas funções, como mostra na imagem, nossas funções são formadas da seguinte maneira: "function" é pra informar que temos a função, "mostrar()" é o nome da nossa função e dentro dos "{}" colocamos as ações que serão executadas quando a função for acionada.
+                </p>
+                <p>
+                    No nosso exemplo, as nossas funções irão executar ações para alterar as cores de fundo do main e do body através das constantes e variáveis utilizadas e também iremos trocar os displays das classes none e function para que quando uma estiver visível a outra não aparecer.
+                </p>
+                <div class="mainItem">
+                    <a href="exemplo/exemplo.html" target="_blank">
+                        VER RESULTADO
+                    </a>
+                </div>
+
             </div>
         </div>
     </main>

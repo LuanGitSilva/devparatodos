@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 232, 232);
+
+}
+
+main {
+    width: 350px;
+    padding: 20px;
+    background-color: rgb(84, 187, 120);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 0px 6px .5px;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+#caixa {
+    padding: 20px;
+    
+}
+
+.function {
+    display: block;
+    margin: auto;
+    border: 1px solid;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+    margin: auto;
+    width: 110px;
+    background-color: aliceblue;
+    font-size: 20px;
+    box-shadow: 0px 0px 3px 0.5px;
+    border-radius: 20px;
+    cursor: pointer;
+}

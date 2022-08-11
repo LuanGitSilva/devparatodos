@@ -7,12 +7,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding-block: 100px;
 }
 
 main {
     height: 720px;
-    width: 400px;
+    width: 350px;
     background-color: rgb(252, 231, 231);
     padding: 10px;
     border-radius: 20px;
