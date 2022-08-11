@@ -1,8 +1,16 @@
 window.addEventListener('scroll', onScroll2);
 
 function onScroll2() {
-    others()
-    //adicionar função toTopButton
+    others();
+    showBackToTopButtonOnScroll();
+}
+
+function showBackToTopButtonOnScroll() {
+    if (scrollY > 450) {
+        backToTopButton.classList.add('show')
+    } else {
+        backToTopButton.classList.remove('show')
+    }
 }
 
 function others() {

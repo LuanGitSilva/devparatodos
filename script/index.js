@@ -1,8 +1,16 @@
 window.addEventListener('scroll', onScroll);
 
 function onScroll() {
-    cor()
-    //adicionar função toTopButton
+    cor();
+    showBackToTopButtonOnScroll();
+}
+
+function showBackToTopButtonOnScroll() {
+    if (scrollY > 450) {
+        backToTopButton.classList.add('show')
+    } else {
+        backToTopButton.classList.remove('show')
+    }
 }
 
 function myFunction(x) {
@@ -70,7 +78,6 @@ function cor() {
         document.querySelector(".menu4").style.color = '#f0f0f0';
     }
 }
-
 
 
 // --------------------------------
