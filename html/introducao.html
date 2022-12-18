@@ -193,7 +193,7 @@
             <ul class="itensMenu">
                 <li><a class="menu1" href="index.html" onclick="myFunction(this)" >Início</a></li>
                 <li><a class="menu2" href="introducao.html" onclick="myFunction(this)" >Introdução</a></li>
-                <li><a class="menu3" href="#" onclick="myFunction(this)" >FunctionFlix</a></li>
+                <!-- <li><a class="menu3" href="#" onclick="myFunction(this)" >FunctionFlix</a></li> -->
                 <li><a class="menu4" href="exercicios.html" onclick="myFunction(this)" >Exercícios</a></li>
             </ul>
         </div>
@@ -248,6 +248,23 @@
                 </p>
                 <div class="mainItem">
                     <a onclick="resumoJs()" href="#resumo">
+                        LER ARTIGO
+                    </a>
+                </div>
+            </div>
+            <!-- -------------------------------------- -->
+            <div class="mainItens">
+                <h2 class="mainItem">
+                    Introdução ao ReactJS
+                </h2>
+                <p class="mainItem">
+                    Como o JavaScript é uma linguagem de programação muito completa, com ele foram criadas novas bibliotecas para criação de projetos, e o ReactJS é uma delas. Vamos dar início nos nossos estudos sobre o ReactJS.
+                </p>
+                <p class="mainItem">
+                    Leia atentamente e se for preciso volte a leitura para entender o máximo sobre esse assunto.
+                </p>
+                <div class="mainItem">
+                    <a onclick="resumoReactJS()" href="#resumo">
                         LER ARTIGO
                     </a>
                 </div>
@@ -698,12 +715,131 @@
                 </div>
 
             </div>
+            <!-- -------------------------------------- -->
+            <div class="resumoReactJS">
+                <h3>
+                    O que é o ReactJS?
+                </h3>
+                <p>
+                    O React é uma biblioteca feita em linguagem Javascript, criada pela empresa do Facebook para ajudar a reduzir o processamento e melhorar o desenpenho, mesmo em máquinas de pouca memória de processamento.
+                </p>
+                <h3>
+                    Como o React funciona?
+                </h3>
+                <p>
+                    O React funciona com o Virtual DOM. Praticamente o React deixa o conteúdo pré-carregado no Virtual DOM, quando em algum momento fazemos uma mudança de conteúdo com click, rolagem ou alguma requisição, o conteúdo que seráalterado é o do Virtual DOM, e após realizar essa alteração ele compara o Vitual DOM com o DOM de fato e executa a alteração apenas do conteúdo que está diferente entre eles.
+                </p>
+                <p>
+                    Então o que vemos carregado em nossa tela é o que chamamos de SPA (Single Page Application). Quando o documento é executado ele carrega o HTML com apenas uma div, e é o conteúdo dessa div que será manipulado pelo React com a troca pré-carregada entre o Vitual DOM e o DOM da nossa máquina.
+                </p>
+                <h3>
+                    O que são os componentes do React?
+                </h3>
+                <p>
+                    O React é baseado em uma estrutura de componentes, isso significa que o projeto final é resultado de vários componentes que contem uma parte de código criados de forma separada e interligados através de exportação e importação.
+                </p>
+                <h3>
+                    Qual a vantegem do uso de componentes no React?
+                </h3>
+                <p>
+                    Por cada parte do projeto ser criada em seu próprio componente a manutenção se torna mais fácil, já que basta identificar o componente e fazer sua alteração de forma separada sem alterar os dados dos outros componentes.
+                </p>
+                <p>
+                    Além dos componentes facilitarem na manuntenção do projeto, também é possivel fazer a reutilização dos componentes, isso significa que se houver algum trecho de código que será repetido em vários locais do projeto só será preciso criar um componente para ele e utilizá-lo quando for necessário.
+                </p>
+                <h3>
+                    Como podemos ter um exemplo da reutilização de componentes?
+                </h3>
+                <p>
+                    Podemos usar os botões como exemplo e criá-los em componentes separados, já que normalmente são trechos de código que se repetem em um projeto e utilizá-los quando for preciso, dessa forma iremos, além de manter um projeto mais organizado, deixar um modelo padronizado para todos os botões do projeto.
+                </p>
+
+                <h3>
+                    Como criamos um projeto React?
+                </h3>
+                <p>
+                    Primeiro temos que verificar se já temos o VSCode (editor de código) e o NodeJS instalados em nosso computador, pois sem eles não conseguiremos criar e trabalhar em nosso projeto ReactJS.
+                </p>
+                <p>
+                    Após isso iremos escolher a pasta que iremos criar nosso projeto. Em nosso exemplo vamos criar da forma recomendada, ou seja, criar uma pasta (a nossa será projetos) nova no disco local para armazenar todos os seus projetos de forma organizada.
+                </p>
+                <p>
+                    Abrimos o nosso prompt de comando e ele mostrará que estamos em C:\Users\usuario>, agora vamos voltar duas pastas com o comando "cd.." e depois "cd.." novamente e depois "cd projetos", agora estamos dentro da nossa pasta projetos e iremos iniciar a criação.
+                </p>
+                <p>
+                    Vamos criar utilizando o Create React App que é a técnica oficial de criação de projetos React. 
+                    Vamos dar o comando ">npx create-react-app react-primeiro --template typescript", isso significa que estamos criando nosso projeto com o método CRA, ele será chamado de react-primeiro e ele já será criado habilitado para o uso de Typescript.
+                    Esse processo de criação pode levar alguns minutos, principalmente se for a primeira vez que você estiver criando um projeto.
+                </p>
+                <p>
+                    Agora que temos nosso projeto criado, podemos fechar o prompt, ir até nossa pasta projetos, clicar com o botão direito na pasta do nosso projeto e abrir ele com o VSCode.
+                    Pronto, agora vamos entender a estrutura do nosso projeto, pois ele será criado com vários arquivos e temos que saber os que iremos utilizar de início.
+                </p>
+                
+                <div class="resumoImagens">
+                    <div>
+                        <img src="exemplo/exemploReactJS.png">
+                    </div>
+                </div>
+                
+                <p>
+                    Veja que ao abrir o projeto no VSCode temos algumas pastas criadas, e é na pasta "src" que iremos focar. Nela temos o "app.tsx" que é o arquivo que será renderizado através do arquivo "index.tsx" e mostrado na tela.
+                </p>
+
+                <h3>O uso do JSX no React</h3>
+                <p>
+                    JSX significa "JavaScript Xml", que é um código Javascript que utiliza sintaxe HTML para escrita de código.
+                    O JSX é uma forma de criar o código mais fácil, veja abaixo um exemplo feito utilizando o JSX e outro sem usar.
+                </p>
+
+                <p>
+                    No primeiro (sem o JSX) utilizamos os três parâmetros necessários para criação dentro de um React.createElement( 1°, 2°, 3°),
+                    onde o primeiro é a tag, o segundo a referência dela e o terceiro o conteúdo.
+                </p>
+                <div class="resumoImagens">
+                    <div>
+                        <img src="exemplo/exemploReactCompilador.png">
+                    </div>
+                </div>
+
+                <p>
+                    Já no segundo criamos como se fosse HTML dentro de código Javascript e o compilador Babel faz o trabalho de levar os dados da forma que ele necessita para a impressão na tela.
+                </p>
+                <div class="resumoImagens">
+                    <div>
+                        <img src="exemplo/exemploReactJSX.png">
+                    </div>
+                </div>
+
+                <h3>Como o JSX é interpretado?</h3>
+                <p>
+                    Para que o JSX seja interpretado pelos navegadores é necessário que seja transformado em código Javascript comum através de alguma ferramenta, como a Babel por exemplo, que é um compilador Javascript feito por um conjunto de ferramentas, e uma de suas funções é converter JSX para ser lido pelos navegadores como Javascript.
+                </p>
+
+                <h3>O uso de "ClasseName" para identificar objetos</h3>
+                <p>
+                    O termo "class" já é reservado para o Javascript, então para não haver conflitos, o termo "ClassName" foi aderido como atributo nos objetos JSX.
+                </p>
+
+                <h3>Como rodar o projeto?</h3>
+                <p>
+                    Ao abrir o terminal no editor de códigos iremos digitar o comando ">npm run start" que é o comando que vem como padrão para inicializar o projeto em nossa máquina. Com isso será aberta uma aba no navegador com um indereço local da máquina (http://localhost:3000). Para confirmar essa informação você pode abrir o arquivo "package.json" e descer até onde ficam os "scripts" e ver quais os comandos podem ser utilizados.
+                </p>
+
+                
+                <!-- <div class="mainItem">
+                    <a href="exemplo/exemplo.html" target="_blank">
+                        VER RESULTADO
+                    </a>
+                </div> -->
+
+            </div>
         </div>
     </main>
     <footer>
         <p>Apresentação profissional</p>
         <div class="socialFooter">
-            <a href="#">
+            <a href="https://github.com/LuanGitSilva" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     aria-label="GitHub" role="img"
                     height="23px"
@@ -715,7 +851,7 @@
             </a>
         </div>
         <div class="socialFooter">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/luan-silva-b7262a235/" target="_blank">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 504.4 504.4"
                     height="23px"
@@ -762,7 +898,7 @@
                 <p>Linkedin</p>
             </a>
         </div>
-        <p>Projeto criado por<a href="#"> Luan Silva </a> em 2022.</p>
+        <p>Projeto criado por<a href="https://www.instagram.com/codewithluan/" target="_blank"> Luan Silva </a> em 2022.</p>
         <p>Todos os direitos reservados.</p>
     </footer>
    

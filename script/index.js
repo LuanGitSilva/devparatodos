@@ -34,7 +34,7 @@ function openMenu() {
         document.querySelector(".bar3").style.backgroundColor = '#130111';
         document.querySelector(".menu1").style.color = '#130111';
         document.querySelector(".menu2").style.color = '#130111';
-        document.querySelector(".menu3").style.color = '#130111';
+        // document.querySelector(".menu3").style.color = '#130111';
         document.querySelector(".menu4").style.color = '#130111';
     } else {
         open.style.height = '100vh';
@@ -48,7 +48,7 @@ function openMenu() {
         document.querySelector(".bar3").style.backgroundColor = '#c84b64';
         document.querySelector(".menu1").style.color = '#f0f0f0';
         document.querySelector(".menu2").style.color = '#f0f0f0';
-        document.querySelector(".menu3").style.color = '#f0f0f0';
+        // document.querySelector(".menu3").style.color = '#f0f0f0';
         document.querySelector(".menu4").style.color = '#f0f0f0';
     }
 }
@@ -64,7 +64,7 @@ function cor() {
         document.querySelector("nav").style.backgroundImage = 'linear-gradient(to bottom, #a597f2, #ffffff00)';
         document.querySelector(".menu1").style.color = '#130111';
         document.querySelector(".menu2").style.color = '#130111';
-        document.querySelector(".menu3").style.color = '#130111';
+        // document.querySelector(".menu3").style.color = '#130111';
         document.querySelector(".menu4").style.color = '#130111';
     } else {
         document.querySelector(".bar1").style.backgroundColor = '#f0f0f0';
@@ -74,10 +74,7 @@ function cor() {
         document.querySelector("nav").style.backgroundImage = 'none';
         document.querySelector(".menu1").style.color = '#f0f0f0';
         document.querySelector(".menu2").style.color = '#f0f0f0';
-        document.querySelector(".menu3").style.color = '#f0f0f0';
+        // document.querySelector(".menu3").style.color = '#f0f0f0';
         document.querySelector(".menu4").style.color = '#f0f0f0';
     }
 }
-
-
-// --------------------------------

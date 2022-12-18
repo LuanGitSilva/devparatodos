@@ -59,7 +59,8 @@ p {
 
 .resumoHtml,
 .resumoCss,
-.resumoJs {
+.resumoJs,
+.resumoReactJS {
     display: none;
 }
 
